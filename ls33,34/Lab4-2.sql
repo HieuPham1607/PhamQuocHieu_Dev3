@@ -248,6 +248,31 @@ WHERE
 GO
 
 /*Bài 8*/
+/*1*/
+UPDATE MonHoc
+SET SoTiet = 45
+WHERE TenMH = N'Tiếng Anh cơ bản';
+GO
+/*2*/
+UPDATE SinhVien
+SET TenSV = N'Trần Thanh Kỳ'
+WHERE TenSV = N'Trần Thị Mai';
+GO
+/*3*/
+UPDATE SinhVien
+SET Phai = 0
+WHERE TenSV = N'Trần Thanh Kỳ';
+GO
+/*4*/
+UPDATE SinhVien
+SET NgaySinh = '1990-07-05'
+WHERE TenSV = N'Trần Thị Thu Thủy';
+GO
+/*5*/
+UPDATE SinhVien
+SET HocBong = HocBong + 100000
+WHERE MaKH = N'AV';
+GO
 /*6*/
 UPDATE Ketqua
 SET Diem = CASE  
